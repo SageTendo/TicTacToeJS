@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script async ref src="index.js"></script>
+    <title>Test</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>Tic Tac Toe</h1>
+
+      <h2>Turn: Player <span id="playerInfo"></span></h2>
+
+      <table id="game" align="center">
+        <tr>
+          <td onclick="makeMove(0,0)"></td>
+          <td onclick="makeMove(0,1)"></td>
+          <td onclick="makeMove(0,2)"></td>
+        </tr>
+        <tr>
+          <td onclick="makeMove(1,0)"></td>
+          <td onclick="makeMove(1,1)"></td>
+          <td onclick="makeMove(1,2)"></td>
+        </tr>
+        <tr>
+          <td onclick="makeMove(2,0)"></td>
+          <td onclick="makeMove(2,1)"></td>
+          <td onclick="makeMove(2,2)"></td>
+        </tr>
+      </table>
+
+      <button id="restart" onclick="restartGame()">Restart</button>
+    </div>
+  </body>
+</html>
